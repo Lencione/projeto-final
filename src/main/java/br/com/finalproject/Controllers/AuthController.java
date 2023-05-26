@@ -24,35 +24,25 @@ public class AuthController {
 
     @PostMapping("/api/login")
     public ResponseEntity<Response> login(@RequestBody LoginRequest loginRequest){
-        User user = authenticateUser(loginRequest);
+        User user = userService.authenticate(loginRequest);
 
         if(user == null){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                    .body(new Response("error", "Invalid credentials.", null));
+            return ResponseEntity
+                    .status(HttpStatus.UNAUTHORIZED)
+                    .body(new Response(
+                            "error",
+                            "Invalid credentials.",
+                            null));
         }
 
-        return ResponseEntity.ok().body(new Response("success", "Successfull authentication", user));
+        return ResponseEntity
+                .ok()
+                .body(new Response(
+                        "success",
+                        "Successfull authentication",
+                        user));
     }
 
-    private User authenticateUser(LoginRequest loginRequest) {
-
-        User user = userService.findByEmail(loginRequest.getEmail());
-        if(user == null || !user.getPassword().equals(loginRequest.getPassword())){
-            return null;
-        }
-        return user;
-    }
-
-    private String generateToken(String email){
-        final long expirationTime = 86400000;
-        Key key = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
 
-        return Jwts.builder()
-                .setSubject(email)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + expirationTime))
-                .signWith(key)
-                .compact();
-    }
 }

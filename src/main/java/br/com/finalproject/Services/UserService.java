@@ -2,6 +2,7 @@ package br.com.finalproject.Services;
 
 import br.com.finalproject.Entities.User;
 import br.com.finalproject.Repositories.UserRepository;
+import br.com.finalproject.Requests.LoginRequest;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -11,7 +12,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User registerUser(User user){
+    public User register(User user){
 
         if(userRepository.findByEmail(user.getEmail()) != null){
             throw new RuntimeException("E-mail already registered!");
@@ -28,6 +29,14 @@ public class UserService {
 
         if(user == null){
             throw new RuntimeException("User not found!");
+        }
+        return user;
+    }
+
+    public User authenticate(LoginRequest loginRequest) {
+        User user = userRepository.findByEmail(loginRequest.getEmail());
+        if(user == null || !user.getPassword().equals(loginRequest.getPassword())){
+            return null;
         }
         return user;
     }

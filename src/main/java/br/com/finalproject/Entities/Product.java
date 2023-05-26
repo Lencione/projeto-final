@@ -1,7 +1,14 @@
 package br.com.finalproject.Entities;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "products")
 public class Product {
@@ -18,38 +25,4 @@ public class Product {
 
     @Column(nullable = false)
     private float price;
-
-    public Product(Long id, String name, int quantity, float price) {
-        this.id = id;
-        this.name = name;
-        this.quantity = quantity;
-        this.price = price;
-    }
-
-    public Product() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public float getPrice() {
-        return price;
-    }
-
-    public void setPrice(float price) {
-        this.price = price;
-    }
 }
