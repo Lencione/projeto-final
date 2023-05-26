@@ -1,6 +1,7 @@
 package br.com.socialeduk.socialeduk.Controllers;
 
 import br.com.socialeduk.socialeduk.Entities.User;
+import br.com.socialeduk.socialeduk.Response.Response;
 import br.com.socialeduk.socialeduk.Services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,23 +16,23 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> registerUser(@RequestBody User user){
+    public ResponseEntity<Response> registerUser(@RequestBody User user){
         try{
-            userService.registerUser(user);
-            return ResponseEntity.ok("Cadastrado com sucesso!");
+            User registerUser = userService.registerUser(user);
+            return ResponseEntity.ok(new Response("success", "User registered with success!", registerUser));
         }   catch (RuntimeException e){
             String errorMessage = e.getMessage();
-            return ResponseEntity.badRequest().body(errorMessage);
+            return ResponseEntity.badRequest().body(new Response("error", e.getMessage(),null));
         }
     }
 
-    @GetMapping("/get/{id}")
-    public ResponseEntity<User> getUser(@PathVariable long id){
+    @GetMapping("/{id}")
+    public ResponseEntity<Response> getUser(@PathVariable long id){
         try{
             User user = userService.findById(id);
-            return ResponseEntity.ok(user);
+            return ResponseEntity.ok(new Response("success", "User found!", user));
         }catch(Exception e){
-            return ResponseEntity.badRequest().body(null);
+            return ResponseEntity.badRequest().body(new Response("error", e.getMessage(),null));
         }
     }
 }
