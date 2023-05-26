@@ -1,0 +1,359 @@
+2023-05-25 20:00:51 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "FRIENDS_REQUESTS" not found; SQL statement:
+DROP TABLE FRIENDS_REQUESTS [42102-214]
+2023-05-25 20:01:11 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE PRODUCTS(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value REAL(10) NOT NULL,\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE PRODUCTS(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value REAL(10) NOT NULL,
+) [42001-214]
+2023-05-25 20:01:43 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:01:43 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE PRODUCTS(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value REAL NOT NULL,\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE PRODUCTS(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value REAL NOT NULL,
+) [42001-214]
+2023-05-25 20:02:34 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:02:34 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE PRODUCTS(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value FLOAT(10) NOT NULL,\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE PRODUCTS(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value FLOAT(10) NOT NULL,
+) [42001-214]
+2023-05-25 20:03:06 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:03:06 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE PRODUCTS(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    price FLOAT(10) NOT NULL,\000d\000a[*])"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE PRODUCTS(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    price FLOAT(10) NOT NULL,
+) [42001-214]
+2023-05-25 20:03:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:03:19 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE PRODUCTS(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    price FLOAT NOT NULL,\000d\000a[*])"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE PRODUCTS(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    price FLOAT NOT NULL,
+) [42001-214]
+2023-05-25 20:03:33 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:03:33 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE PRODUCTS(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value FLOAT(10) NOT NULL,\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE PRODUCTS(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value FLOAT(10) NOT NULL,
+) [42001-214]
+2023-05-25 20:04:56 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:04:56 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE products(\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value FLOAT(10) NOT NULL\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE products(
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value FLOAT(10) NOT NULL
+) [42001-214]
+2023-05-25 20:05:23 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE products (\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value FLOAT(10) NOT NULL\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE products (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value FLOAT(10) NOT NULL
+) [42001-214]
+2023-05-25 20:06:34 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:06:34 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE products (\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value NUMBER(10,2) NOT NULL\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE products (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value NUMBER(10,2) NOT NULL
+) [42001-214]
+2023-05-25 20:07:14 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:07:14 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "-- Tabela ""Products""\000d\000aCREATE TABLE products (\000d\000a    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,\000d\000a    name VARCHAR2(100) NOT NULL,\000d\000a    quantity NUMBER(10) NOT NULL,\000d\000a    [*]value NUMBER(10,2) NOT NULL\000d\000a)"; expected "identifier"; SQL statement:
+-- Tabela "Products"
+CREATE TABLE products (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    value NUMBER(10,2) NOT NULL
+) [42001-214]
+2023-05-25 20:07:26 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+-- Tabela "users"
+CREATE TABLE users (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    email VARCHAR2(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT C [42101-214]
+2023-05-25 20:09:01 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUCTS" already exists; SQL statement:
+-- Tabela "Products"
+CREATE TABLE products (
+    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    price NU [42101-214]
+2023-05-25 20:22:52 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "USER0_.USERNAME" not found; SQL statement:
+select user0_.id as id1_0_, user0_.email as email2_0_, user0_.name as name3_0_, user0_.password as password4_0_, user0_.username as username5_0_ from users user0_ where user0_.email=? [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:2122)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2059)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2037)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:956)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:357)
+	at org.hibernate.loader.Loader.doList(Loader.java:2868)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2682)
+	at org.hibernate.loader.Loader.list(Loader.java:2677)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:540)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:218)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1459)
+	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1649)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1617)
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1665)
+	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getSingleResult(CriteriaQueryTypeQueryAdapter.java:111)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:198)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:90)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:156)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:144)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:160)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:145)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy4/jdk.proxy4.$Proxy106.findByEmail(Unknown Source)
+	at br.com.socialeduk.socialeduk.Services.UserService.findByEmail(UserService.java:27)
+	at br.com.socialeduk.socialeduk.Controllers.AuthController.authenticateUser(AuthController.java:38)
+	at br.com.socialeduk.socialeduk.Controllers.AuthController.login(AuthController.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-05-25 20:23:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select user0_.id as id1_1_, user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_ from users user0_ where user0_.email=? [42104-214]
+2023-05-25 20:23:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select user0_.id as id1_1_, user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_ from users user0_ where user0_.id=? [42104-214]
+2023-05-25 20:23:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select user0_.id as id1_1_, user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_ from users user0_ where user0_.id=? [42104-214]
+2023-05-25 20:23:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" not found (this database is empty); SQL statement:
+select user0_.id as id1_1_, user0_.email as email2_1_, user0_.name as name3_1_, user0_.password as password4_1_ from users user0_ where user0_.email=? [42104-214]
+2023-05-25 20:25:31 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES ()"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES () [42001-214]
+2023-05-25 20:27:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES (""Relogio"",5,50.45)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ("Relogio",5,50.45) [42001-214]
+2023-05-25 20:27:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES (""Mouse"",10,20.45)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ("Mouse",10,20.45) [42001-214]
+2023-05-25 20:27:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES (""Teclado"",21,25.40)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ("Teclado",21,25.40) [42001-214]
+2023-05-25 20:27:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES (""Monitor"",11,1150.54)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ("Monitor",11,1150.54) [42001-214]
+2023-05-25 20:28:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES ('Relogio',5,50.45)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ('Relogio',5,50.45) [42001-214]
+2023-05-25 20:28:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES ('Mouse',10,20.45)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ('Mouse',10,20.45) [42001-214]
+2023-05-25 20:28:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES ('Teclado',21,25.40)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ('Teclado',21,25.40) [42001-214]
+2023-05-25 20:28:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](name,quantity,price) VALUES ('Monitor',11,1150.54)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(name,quantity,price) VALUES ('Monitor',11,1150.54) [42001-214]
+2023-05-25 20:29:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCTS: ""ID"" NUMERIC(10) GENERATED BY DEFAULT AS IDENTITY(START WITH 1) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCTS"("ID","NAME","QUANTITY","PRICE")VALUES(?,?,?,?) [22018-214]
+2023-05-25 20:29:17 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCTS: ""ID"" NUMERIC(10) GENERATED BY DEFAULT AS IDENTITY(START WITH 1) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCTS"("ID","NAME","QUANTITY","PRICE")VALUES(?,?,?,?) [22018-214]
+2023-05-25 20:29:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCTS: ""ID"" NUMERIC(10) GENERATED BY DEFAULT AS IDENTITY(START WITH 1) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCTS"("ID","NAME","QUANTITY","PRICE")VALUES(?,?,?,?) [22018-214]
+2023-05-25 20:29:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCTS: ""ID"" NUMERIC(10) GENERATED BY DEFAULT AS IDENTITY(START WITH 1) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCTS"("ID","NAME","QUANTITY","PRICE")VALUES(?,?,?,?) [22018-214]
+2023-05-25 20:30:29 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCTS: ""ID"" NUMERIC(10) GENERATED BY DEFAULT AS IDENTITY(START WITH 1) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCTS"("ID","NAME","QUANTITY","PRICE")VALUES(?,?,?,?) [22018-214]
+2023-05-25 20:30:29 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "'' (PRODUCTS: ""ID"" NUMERIC(10) GENERATED BY DEFAULT AS IDENTITY(START WITH 1) NOT NULL)"; SQL statement:
+INSERT INTO "PUBLIC"."PRODUCTS"("ID","NAME","QUANTITY","PRICE")VALUES(?,?,?,?) [22018-214]
+2023-05-25 20:31:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](id,name,quantity,price) VALUES (1,'Relogio',5,50.45)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(id,name,quantity,price) VALUES (1,'Relogio',5,50.45) [42001-214]
+2023-05-25 20:31:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](id,name,quantity,price) VALUES (2,'Mouse',10,20.45)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(id,name,quantity,price) VALUES (2,'Mouse',10,20.45) [42001-214]
+2023-05-25 20:31:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](id,name,quantity,price) VALUES (3,'Teclado',21,25.40)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(id,name,quantity,price) VALUES (3,'Teclado',21,25.40) [42001-214]
+2023-05-25 20:31:27 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO products SET[*](id,name,quantity,price) VALUES (4,'Monitor',11,1150.54)"; expected "identifier"; SQL statement:
+INSERT INTO products SET(id,name,quantity,price) VALUES (4,'Monitor',11,1150.54) [42001-214]
