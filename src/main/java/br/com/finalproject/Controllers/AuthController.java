@@ -1,8 +1,9 @@
-package br.com.socialeduk.socialeduk.Controllers;
+package br.com.finalproject.Controllers;
 
-import br.com.socialeduk.socialeduk.Entities.User;
-import br.com.socialeduk.socialeduk.Requests.LoginRequest;
-import br.com.socialeduk.socialeduk.Services.UserService;
+import br.com.finalproject.Entities.User;
+import br.com.finalproject.Requests.LoginRequest;
+import br.com.finalproject.Response.Response;
+import br.com.finalproject.Services.UserService;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
@@ -13,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.crypto.spec.OAEPParameterSpec;
 import java.security.Key;
 import java.util.Date;
 
@@ -23,14 +23,15 @@ public class AuthController {
     private UserService userService;
 
     @PostMapping("/api/login")
-    public ResponseEntity<String> login(@RequestBody LoginRequest loginRequest){
+    public ResponseEntity<Response> login(@RequestBody LoginRequest loginRequest){
         User user = authenticateUser(loginRequest);
 
         if(user == null){
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciais inválidas");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body(new Response("error", "Invalid credentials.", null));
         }
 
-        return ResponseEntity.ok(generateToken(loginRequest.getEmail()));
+        return ResponseEntity.ok().body(new Response("success", "Successfull authentication", user));
     }
 
     private User authenticateUser(LoginRequest loginRequest) {

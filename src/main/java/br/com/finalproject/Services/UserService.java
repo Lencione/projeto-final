@@ -1,7 +1,7 @@
-package br.com.socialeduk.socialeduk.Services;
+package br.com.finalproject.Services;
 
-import br.com.socialeduk.socialeduk.Entities.User;
-import br.com.socialeduk.socialeduk.Repositories.UserRepository;
+import br.com.finalproject.Entities.User;
+import br.com.finalproject.Repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,7 +14,7 @@ public class UserService {
     public User registerUser(User user){
 
         if(userRepository.findByEmail(user.getEmail()) != null){
-            throw new RuntimeException("Email já cadastrado!");
+            throw new RuntimeException("E-mail already registered!");
         }
 
         return userRepository.save(user);
@@ -24,6 +24,11 @@ public class UserService {
         return userRepository.findByEmail(email);
     }
     public User findById(long id){
-        return userRepository.getUserById(id);
+        User user = userRepository.getUserById(id);
+
+        if(user == null){
+            throw new RuntimeException("User not found!");
+        }
+        return user;
     }
 }

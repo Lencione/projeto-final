@@ -1,4 +1,4 @@
-package br.com.socialeduk.socialeduk.Entities;
+package br.com.finalproject.Entities;
 
 import javax.persistence.*;
 

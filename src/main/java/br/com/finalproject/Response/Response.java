@@ -1,4 +1,4 @@
-package br.com.socialeduk.socialeduk.Response;
+package br.com.finalproject.Response;
 
 public class Response {
     public String status;

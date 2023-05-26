@@ -1,4 +1,4 @@
-package br.com.socialeduk.socialeduk.Requests;
+package br.com.finalproject.Requests;
 
 public class LoginRequest {
     private String email;

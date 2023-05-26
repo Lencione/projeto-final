@@ -1,7 +1,7 @@
-package br.com.socialeduk.socialeduk.Services;
+package br.com.finalproject.Services;
 
-import br.com.socialeduk.socialeduk.Entities.Product;
-import br.com.socialeduk.socialeduk.Repositories.ProductRepository;
+import br.com.finalproject.Entities.Product;
+import br.com.finalproject.Repositories.ProductRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

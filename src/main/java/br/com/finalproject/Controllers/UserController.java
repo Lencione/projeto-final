@@ -1,8 +1,8 @@
-package br.com.socialeduk.socialeduk.Controllers;
+package br.com.finalproject.Controllers;
 
-import br.com.socialeduk.socialeduk.Entities.User;
-import br.com.socialeduk.socialeduk.Response.Response;
-import br.com.socialeduk.socialeduk.Services.UserService;
+import br.com.finalproject.Entities.User;
+import br.com.finalproject.Response.Response;
+import br.com.finalproject.Services.UserService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

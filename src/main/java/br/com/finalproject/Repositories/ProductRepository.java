@@ -1,6 +1,6 @@
-package br.com.socialeduk.socialeduk.Repositories;
+package br.com.finalproject.Repositories;
 
-import br.com.socialeduk.socialeduk.Entities.Product;
+import br.com.finalproject.Entities.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
