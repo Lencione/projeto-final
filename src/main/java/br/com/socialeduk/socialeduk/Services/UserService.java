@@ -12,9 +12,6 @@ public class UserService {
     }
 
     public User registerUser(User user){
-        if(userRepository.findByUsername(user.getUsername()) != null){
-            throw new RuntimeException("Nome de usuário já existe!");
-        }
 
         if(userRepository.findByEmail(user.getEmail()) != null){
             throw new RuntimeException("Email já cadastrado!");

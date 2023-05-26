@@ -1,38 +1,21 @@
 -- Tabela "users"
 CREATE TABLE users (
     id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
-    username VARCHAR2(50) NOT NULL,
-    password VARCHAR2(100) NOT NULL,
     name VARCHAR2(100) NOT NULL,
     email VARCHAR2(100) NOT NULL,
+    password VARCHAR(20) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabela "posts"
-CREATE TABLE posts (
+-- Tabela "Products"
+CREATE TABLE products (
     id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
-    user_id NUMBER(10) NOT NULL,
-    content VARCHAR2(500) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users (id)
+    name VARCHAR2(100) NOT NULL,
+    quantity NUMBER(10) NOT NULL,
+    price NUMBER(10,2) NOT NULL
 );
 
--- Tabela "friend_requests"
-CREATE TABLE friend_requests (
-    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
-    sender_id NUMBER(10) NOT NULL,
-    receiver_id NUMBER(10) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (sender_id) REFERENCES users (id),
-    FOREIGN KEY (receiver_id) REFERENCES users (id)
-);
-
--- Tabela "friends"
-CREATE TABLE friends (
-    id NUMBER(10) PRIMARY KEY AUTO_INCREMENT,
-    user_id_1 NUMBER(10) NOT NULL,
-    user_id_2 NUMBER(10) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id_1) REFERENCES users (id),
-    FOREIGN KEY (user_id_2) REFERENCES users (id)
-);
+INSERT INTO products (id,name,quantity,price) VALUES (1,'Relogio',5,50.45);
+INSERT INTO products (id,name,quantity,price) VALUES (2,'Mouse',10,20.45);
+INSERT INTO products (id,name,quantity,price) VALUES (3,'Teclado',21,25.40);
+INSERT INTO products (id,name,quantity,price) VALUES (4,'Monitor',11,1150.54);

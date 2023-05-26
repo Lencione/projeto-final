@@ -10,19 +10,15 @@ public class User {
     private Long id;
 
     @Column(nullable = false)
-    private String username;
+    private String name;
 
     @Column(nullable = false)
     private String password;
 
     @Column(nullable = false)
-    private String name;
-
-    @Column(nullable = false)
     private String email;
 
-    public User(String username, String password, String name, String email) {
-        this.username = username;
+    public User(String password, String name, String email) {
         this.password = password;
         this.name = name;
         this.email = email;
@@ -36,14 +32,6 @@ public class User {
         return id;
     }
 
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
     public String getPassword() {
         return password;
