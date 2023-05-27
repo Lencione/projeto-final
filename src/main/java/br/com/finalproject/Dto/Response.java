@@ -1,4 +1,4 @@
-package br.com.finalproject.Response;
+package br.com.finalproject.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

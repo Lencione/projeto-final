@@ -2,6 +2,7 @@ package br.com.finalproject.Services;
 
 import br.com.finalproject.Entities.Product;
 import br.com.finalproject.Repositories.ProductRepository;
+import net.bytebuddy.implementation.bytecode.Throw;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,7 +20,12 @@ public class ProductService {
     }
 
     public Product getById(Long id){
-        return  productRepository.getProductById(id);
+        Product product = productRepository.getProductById(id);
+
+        if(product == null){
+            throw new RuntimeException("Product doesn't exists!");
+        }
+        return product;
     }
 
     public List<Product> getAll(){

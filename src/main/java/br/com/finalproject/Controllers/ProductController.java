@@ -1,6 +1,6 @@
 package br.com.finalproject.Controllers;
 
-import br.com.finalproject.Response.Response;
+import br.com.finalproject.Dto.Response;
 import br.com.finalproject.Services.ProductService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/products")
 public class ProductController {
-    private ProductService productService;
+    private final ProductService productService;
 
     public ProductController(ProductService productService) {
         this.productService = productService;
@@ -19,11 +19,21 @@ public class ProductController {
 
     @GetMapping("/getAll")
     public ResponseEntity<Response> getAll(){
-        return ResponseEntity.ok().body(new Response("Success", "Products retrieved successfully", productService.getAll()));
+        return ResponseEntity.ok().body(new Response("success", "Products retrieved successfully", productService.getAll()));
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Response> getById(@PathVariable Long id){
-        return ResponseEntity.ok().body(new Response("Success", "Product retrieved with success!",productService.getById(id)));
+        try {
+            return ResponseEntity.ok().body(new Response("success", "Product retrieved with success!",productService.getById(id)));
+        }catch (Exception e){
+            return ResponseEntity.badRequest().body(new Response(
+                    "error",
+                    e.getMessage(),
+                    null
+            ));
+        }
+
+
     }
 }

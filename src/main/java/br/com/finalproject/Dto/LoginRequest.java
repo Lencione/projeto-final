@@ -1,4 +1,4 @@
-package br.com.finalproject.Requests;
+package br.com.finalproject.Dto;
 
 import lombok.Data;
 

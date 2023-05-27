@@ -2,7 +2,7 @@ package br.com.finalproject.Services;
 
 import br.com.finalproject.Entities.User;
 import br.com.finalproject.Repositories.UserRepository;
-import br.com.finalproject.Requests.LoginRequest;
+import br.com.finalproject.Dto.LoginRequest;
 import org.springframework.stereotype.Service;
 
 @Service
